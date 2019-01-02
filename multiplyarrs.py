@@ -12,4 +12,4 @@ def multiply_arrs(arr1, arr2):
 arr1 = [9, 8, 9]
 arr2 = [9, 9, 7, 8]
 
-print(multiply_arrs(arr1, arr2))
+print(multiply_arrs(arr1, arr2)) #=> [9, 8, 6, 8, 2, 4, 2]
