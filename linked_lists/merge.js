@@ -1,4 +1,4 @@
-function ListNode(val) { // ListNode class definition
+function ListNode(val) { // ListNode 'class' definition
     this.val = val;
     this.next = null;
 }
