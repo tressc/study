@@ -39,8 +39,9 @@ class Node {
 }
 
 class Heap {
-  constructor() {
+  constructor(min = false) {
     this.heap = [];
+    this.min = min;
   }
 
   max() {

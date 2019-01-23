@@ -132,4 +132,4 @@ const points = [
   [10,5],
 ];
 
-console.log(kClosest([6,5], points, 4));
+console.log(kClosest([6,5], points, 4)); //=> [[4,6], [7,3], [5,4], [7,6]]
