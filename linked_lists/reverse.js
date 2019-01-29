@@ -11,7 +11,7 @@ function reverseList(head) {
     prev = current;
     current = next;
   }
-  
+
   return prev;
 }
 
@@ -20,7 +20,7 @@ function reverse(node, previous) {
   var newHead;
 
   if (node.next) {
-    reverse(node.next, node); // newHead = reverse(node.next, node) needed on LC
+    newHead = reverse(node.next, node); // needed for Last Call
   } else {
     newHead = node; // store reference to "last" node
   }

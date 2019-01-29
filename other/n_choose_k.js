@@ -2,25 +2,62 @@
 // collection of n size
 
 function nChooseK(n, k) {
-  // math formula goes here
+  const nFact = factorial(n);
+  const kFact = factorial(k);
+
+  return nFact / (kFact * factorial(n - k));
+}
+
+function factorial(n) {
+  if (n < 2) {
+    return 1;
+  }
+
+  return n * factorial(n - 1);
 }
 
 // generate all the unique combinations of size k from arr
 
-function arrChooseK(arr, k) {
-  if (arr.length === k) {
-    return [arr];
-  }
+// below doesn't work, but also any solution which stores the results
+// would quickly run out of memory for larger inputs. Using "yield", is
+// one way to solve this issue;
 
-  var result = [];
 
-  for (var i = 0; i < arr.length; i++) {
-    var subArr = arr.slice(0,i).concat(arr.slice(i + 1));
-    result = result.concat(arrChooseK(subArr, k));
-  }
-  return result;
-}
+// function arrChooseK(arr, k) {
+//   if (k === 0 || arr.length < 1) return [];
+//   const combos = [];
+//
+//   for (var i = 0; i < arr.length; i++) {
+//     const el = arr[i];
+//     const rest = arr.slice(i + 1);
+//     const chosen = arrChooseK(rest, k - 1);
+//     chosen.push(el);
+//     combos.push(chosen);
+//   }
+//   return combos;
+// }
 
+// this is someone else's code. refactor to include a MAX param
+var arrChooseK = function(a, min) {
+    var fn = function(n, src, got, all) {
+        if (n === 0) {
+            if (got.length > 0) {
+                all[all.length] = got;
+            }
+            return;
+        }
+        for (var j = 0; j < src.length; j++) {
+            fn(n - 1, src.slice(j + 1), got.concat([src[j]]), all);
+        }
+        return;
+    };
+    var all = [];
+    for (var i = min; i < a.length; i++) {
+        fn(i, a, [], all);
+    }
+    // all.push(a);
+    return all;
+};
 
 var combos = arrChooseK([1,2,3,4], 2);
 
