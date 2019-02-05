@@ -36,9 +36,6 @@ class Board {
 
 }
 
-var a = new Board();
-console.log(a.board);
-
 
 // exports
 module.exports = Board;
