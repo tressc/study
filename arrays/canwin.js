@@ -5,6 +5,7 @@ function canWin(array) {
   for (var i = 0; i < array.length; i++) {
     boolArr.push(false);
   }
+  // const boolArr = new Array(array.length).fill(false);
 
   for (var i = array.length - 1; i >= 0; i--) {
     for (var j = array[i]; j > 0; j--) {

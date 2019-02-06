@@ -29,17 +29,19 @@ class Board {
 
   // instead of iterating, we can update the relevant lines after each
   // move and just check if any of those lines is winning, thus
-  // limiting our search space and doing max 3 checks
+  // limiting our search space and doing max 4 checks
 
   hasWon(row, col) {
     this.lines[col]++;
     this.lines[row + 4]++;
     if (row === col) this.lines[7]++;
+    if (row + col === 2) this.lines[3]++;
 
     return (
       this.lines[col] === 3 ||
       this.lines[row + 4] === 3 ||
-      this.lines[7] === 3
+      this.lines[7] === 3 ||
+      this.lines[3] === 3
     );
   }
 

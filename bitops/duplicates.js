@@ -1,7 +1,7 @@
 // search for a duplicated number in an array and return it
 // should be done in O(n) time and O(1) extra space
 
-const findDup64 = arr => { // max num in array must be <= 63
+const findDup32 = arr => { // max num in array must be <= 31
   let nums = 0;
   for (let i = 0; i < arr.length; i++) {
     let num = arr[i];

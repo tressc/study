@@ -16,7 +16,7 @@ function reverseList(head) {
 }
 
 // recursive
-function reverse(node, previous) {
+function reverse(node, previous = null) {
   var newHead;
 
   if (node.next) {
