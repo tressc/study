@@ -21,7 +21,7 @@ My goal is to make this a more comprehensive study resource. The following steps
 | add complexity info  | started      |
 | add more problems  | always in progress      |
 | add test files  | not started      |
-| test generator  | not started      |
+| exam generator  | not started      |
 
 - All ES5 syntax should be updated to ES6. Code style should conform to ES6 standards as well.
 
@@ -33,4 +33,4 @@ My goal is to make this a more comprehensive study resource. The following steps
 
 - In-file `console.log`s should be replaced with external test files, using one of mocha, jasmine, etc.
 
-- Add a test generator, which builds a test and test files from the command line.
+- Add a exam generator, which builds a exam and test files from the command line.
