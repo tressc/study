@@ -1,5 +1,5 @@
-function intToStr(int) {
-  return "5";
-}
+const intToStr = int => {
+  // your code here...
+};
 
 module.exports = intToStr;

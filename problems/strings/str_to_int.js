@@ -1,5 +1,5 @@
-function strToInt() {
-  return 5;
-}
+const strToInt = str => {
+  // your code here...
+};
 
 module.exports = strToInt;

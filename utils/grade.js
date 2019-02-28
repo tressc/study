@@ -4,7 +4,7 @@ var fs = require('fs');
 var passing = 0;
 var total = 0;
 
-mocha.addFile('../test/test.js');
+// mocha.addFile('../test/test.js');
 
 mocha.run()
     .on('test', function(test) {

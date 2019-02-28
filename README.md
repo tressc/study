@@ -2,7 +2,11 @@
 
 This is a study resource for interview prep.
 
-Everything is in JavaScript. Most folders contain a `basics.js` file, which contains a class definition for data structures such as *binary search trees*, and/or some basic notes about this category of problems. The remaining files in that folder contain specific problems.
+Everything is in JavaScript. Questions can be found in the `problems` subdirectory and are categorized by type. To test your answers, run `mocha test/<file_name>.js` from the root directory. The file name will correspond with the type of problems you are solving. For example, if you are solving problems from the `problems/arrays` subdirectory, the test file will be `test/arrays.js`.
+
+### Archive
+
+Most folders contain a `basics.js` file, which contains a class definition for data structures such as *binary search trees*, and/or some basic notes about this category of problems. The remaining files in that folder contain specific problems.
 
 One notable exception to this structure is the `bingo` folder, which contains a first pass implementation at an OOP bingo game.
 

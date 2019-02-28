@@ -94,8 +94,9 @@ function dutchFlag(arr, i) {
       larger--;
     }
 
-    console.log(arr, smaller, equal, larger);
+    // console.log(arr, smaller, equal, larger);
   }
+  return arr;
 }
 
 var arr1 = [0,1,2,0,2,1,1];

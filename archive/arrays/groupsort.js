@@ -11,11 +11,11 @@ function trueFalse(array) {
   }
 }
 
-// var arr1 = [true, false, true, false, true, false];
-//
-// trueFalse(arr1);
-//
-// console.log(arr1);
+var arr1 = [true, false, true, false, true, false];
+
+trueFalse(arr1);
+
+console.log(arr1);
 
 
 // this can be generalized for any array containing only three known types of values
