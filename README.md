@@ -16,11 +16,11 @@ My goal is to make this a more comprehensive study resource. The following steps
 | task               | status      |
 | -------------      |:-------------:|
 | remove python files  | complete           |
-| update ES5 syntax  | started           |
-| better imports     | started           |
-| add complexity info  | started      |
+| update ES5 syntax  | in progress           |
+| better imports     | in progress           |
+| add complexity info  | in progress      |
 | add more problems  | always in progress      |
-| add test files  | not started      |
+| add test files  | in progress      |
 | exam generator  | not started      |
 
 - All ES5 syntax should be updated to ES6. Code style should conform to ES6 standards as well.
